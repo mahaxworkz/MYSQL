@@ -1,0 +1,65 @@
+drop  database working_people;
+use xworkz;
+DESC au_results;
+select *from au_results;
+INSERT au_results VALUES (713619104,'maha','cs8551','pass',1);
+INSERT au_results VALUES (713619105,'dhanush','cs8592','pass',2);
+INSERT au_results VALUES (713619124,'keerthana','cs8552','pass',1);
+INSERT au_results VALUES (713619125,'arun','cs8551','pass',1);
+INSERT au_results VALUES (713619101,'fujisan','cs8542','pass',2);
+INSERT au_results VALUES (713619131,'manu','cs8551','pass',3);
+INSERT au_results VALUES (713619132,'Poorni','cs8562','pass',3);
+INSERT au_results VALUES (713619134,'Pooja','cs8553','pass',1);
+INSERT au_results VALUES (713619135,'umesh','cs8595','pass',1);
+
+SELECT * FROM billboard_records;
+desc billboard_records;
+INSERT billboard_records values(2,'dynamite','bts',10000000);
+INSERT billboard_records values(3,'kill this love','blackpink',7500000);
+INSERT billboard_records values(3,'badguy','billie',7500000);
+INSERT billboard_records values(4,'blindingLights','blindinglights',690000);
+INSERT billboard_records values(5,'stay','eminem',650000);
+INSERT billboard_records values(6,'takitaki','selena',600000);
+INSERT billboard_records values(7,'lovestory','tailor',590000);
+INSERT billboard_records values(8,'sugsr','maroon',560000);
+INSERT billboard_records values(9,'animal','maroon5',530000);
+INSERT billboard_records values(10,'dragMeDown','oneDirection',500000);
+
+SELECT * FROM literature_survey;
+DESC literature_survey;
+INSERT literature_survey VALUES (1,'Tamilnadu',780000,78);
+INSERT literature_survey VALUES (2,'Karnataka',780000,77);
+INSERT literature_survey VALUES (3,'kerala',890000,93);
+INSERT literature_survey VALUES (5,'Telungana',670000,68);
+INSERT literature_survey VALUES (6,' Goa',800000,86);
+INSERT literature_survey VALUES (7,'Maharastra',780000,74);
+INSERT literature_survey VALUES (8,'Haryana',790000,88);
+INSERT literature_survey VALUES (9,'Gujarat',680000,69);
+INSERT literature_survey VALUES (10,'Rajastan',580000,71);
+
+SELECT * FROM population;
+DESC population;
+INSERT population VALUES ('Assam',2011,200000);
+INSERT population VALUES ('Sikim',2011,260000);
+INSERT population VALUES ('Tripura',2011,250000);
+INSERT population VALUES ('WestBengal',2011,300000);
+INSERT population VALUES ('TamilNadu',2011,340000);
+INSERT population VALUES ('Kerala',2011,450000);
+INSERT population VALUES ('Karnataka',2011,300000);
+INSERT population VALUES ('Goa',2011,10000);
+INSERT population VALUES ('UP',2011,200000);
+
+SELECT * FROM web_series;
+DESC web_series;
+ALTER TABLE  web_series  modify COLUMN series_name varchar(20) ;
+ 
+INSERT web_series VALUES('Wednesday',86,'fantacy','one');
+INSERT web_series VALUES('StrangerThings',87,'fantacy','six');
+INSERT web_series VALUES('Narcos',88,'crime','one');
+INSERT web_series VALUES('Blackmirror',88,'Sci-fi','one');
+INSERT web_series VALUES('Thecrown',86,' drama','six');
+INSERT web_series VALUES('Dark',88,' horor','three');
+INSERT web_series VALUES('Mindhunter',86,'mystery','two');
+INSERT web_series VALUES('Debris',83,' sci-fi','one');
+INSERT web_series VALUES('Daredevil',86,'crime','three');
+INSERT web_series VALUES('ThePunisher',85,'action','two');
